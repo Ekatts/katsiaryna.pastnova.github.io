@@ -3,7 +3,7 @@ document.getElementById('checkBtn').addEventListener('click', async () => {
     const resultDiv = document.getElementById('result');
 
     try {
-        const response = await fetch('http://localhost:5000/api/entropy', {
+        const response = await fetch('http://kaciaryna-pastnova.runasp.net/api/entropy', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

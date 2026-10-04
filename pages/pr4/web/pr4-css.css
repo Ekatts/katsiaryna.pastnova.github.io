@@ -118,12 +118,20 @@ textarea {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.55);
 
   display: flex;
-  padding-top: 10px;
-  padding-left: 5px;
+  padding-top: 20px;
+  padding-left: 8px;
+  padding-right: 8px;
 
-  word-break: break-all;      
-  overflow-wrap: anywhere;   
-  white-space: pre-wrap;
+  word-break: normal;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 2.2; 
+}
+
+.result-box sup {
+    font-size: 0.75em;
+    line-height: 0;
+    vertical-align: super;
 }
 
 a {

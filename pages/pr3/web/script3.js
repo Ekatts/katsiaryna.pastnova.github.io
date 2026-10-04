@@ -16,7 +16,7 @@ document.getElementById('checkBtn').addEventListener('click', async () => {
     const keyLength = cleanedText.length;
 
     try {
-        const response = await fetch('http://localhost:5000/api/vernam', {
+        const response = await fetch('http://kaciaryna-pastnova.runasp.net/api/vernam', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

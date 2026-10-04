@@ -10,7 +10,7 @@ document.getElementById('checkBtn').addEventListener('click', async () => {
     }
 
     try {
-        const response = await fetch('http://kaciaryna-pastnova.runasp.net/api/textgenerator', {
+        const response = await fetch('https://kaciaryna-pastnova.runasp.net/api/textgenerator', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'

@@ -131,9 +131,7 @@ textarea {
 }
 
 a {
-    font-family: 'Inter', sans-serif;
-    font-size: 22px;
-    font-weight: bold;
+    font: 22px 'Inter', sans-serif, bold; 
     color: white;
     text-decoration: none;
 }

@@ -5,6 +5,7 @@ const cards = document.querySelectorAll('.card');
 let isDragging = false;
 let startY = 0;
 let currentIndex = 1; // Start with 2nd card
+let hasDragged = false;
 
 const cardHeight = 150; // Updated to match actual .project_wrap height
 
@@ -28,14 +29,20 @@ function updateCarousel() {
 // Mouse Drag Events
 container.addEventListener('mousedown', (e) => {
   isDragging = true;
+  hasDragged = false;
   startY = e.clientY;
   track.style.transition = 'none';
 });
 
 window.addEventListener('mousemove', (e) => {
   if (!isDragging) return;
+  
   const currentY = e.clientY;
   const diff = currentY - startY;
+
+   if (Math.abs(diff) > 5) {
+        hasDragged = true; // link is being dragged, not just clicked
+    }
   
   const containerCenter = container.offsetHeight / 2;
   const baseOffset = containerCenter - (currentIndex * cardHeight + cardHeight / 2);
@@ -56,6 +63,15 @@ window.addEventListener('mouseup', (e) => {
   }
 
   updateCarousel();
+});
+
+document.querySelectorAll('.a_block').forEach(link => {
+    link.addEventListener('click', (e) => {
+        if (hasDragged) {
+            e.preventDefault(); // click-thrpugh is forbidden
+            e.stopPropagation();
+        }
+    });
 });
 
 window.addEventListener('load', updateCarousel);

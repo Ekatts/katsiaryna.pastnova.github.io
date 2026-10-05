@@ -102,28 +102,26 @@ textarea {
 }
 
 .result-box {
-  margin-top: 20px;
-  width: 450px;
-  min-height: 150px;
-  font: 400 12px 'Inter', sans-serif; 
-  color: black;
-  text-align: left;
-  border-radius: 10px;
-
-  background: rgba(255, 255, 255, 0.70); 
-  backdrop-filter: blur(40px);          
-  
-  border: 1px solid rgba(55, 26, 102, 0.60);
-  border-style: blur(4px);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.55);
-
-  display: block;
-  padding-top: 10px;
-  padding-left: 5px;    
-
-  word-break: break-word;
-  overflow-wrap: anywhere;
-  white-space: normal;
+    margin-top: 20px;
+    width: 450px;
+    min-height: 150px;
+    font: 400 14px/1.8 'Inter', sans-serif; 
+    color: black;
+    text-align: left;
+    border-radius: 10px;
+    
+    background: rgba(255, 255, 255, 0.70);
+    backdrop-filter: blur(40px);
+    border: 1px solid rgba(55, 26, 102, 0.60);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.55);
+    
+    padding: 15px;
+    box-sizing: border-box;
+    display: block;
+    
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: normal;
 }
 
 a {

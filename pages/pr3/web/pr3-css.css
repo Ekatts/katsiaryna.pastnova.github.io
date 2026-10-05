@@ -104,7 +104,7 @@ textarea {
 .result-box {
   margin-top: 20px;
   width: 450px;
-  height: 150px;
+  min-height: 150px;
   font: 400 12px 'Inter', sans-serif; 
   color: black;
   text-align: left;
@@ -117,9 +117,13 @@ textarea {
   border-style: blur(4px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.55);
 
-  display: flex;
+  display: block;
   padding-top: 10px;
   padding-left: 5px;    
+
+  word-break: break-word;
+  overflow-wrap: anywhere;
+  white-space: normal;
 }
 
 a {

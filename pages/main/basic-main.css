@@ -215,6 +215,9 @@ a:hover {
 
 a.a_block {
   text-decoration: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  touch-action: pan-y; 
 }
 
 .project:hover {

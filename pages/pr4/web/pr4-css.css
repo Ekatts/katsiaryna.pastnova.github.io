@@ -117,7 +117,7 @@ textarea {
   border-style: blur(4px);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.55);
 
-  display: flex;
+  display: block;
   padding-top: 20px;
   padding-left: 8px;
   padding-right: 8px;
@@ -135,9 +135,11 @@ textarea {
 }
 
 a {
-  font: 22px 'Inter', sans-serif, bold; 
-  color: white;
-  text-decoration: none;
+    font-family: 'Inter', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
 }
 
 a:hover {

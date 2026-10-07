@@ -15,8 +15,7 @@ html, body {
 .wrap {
   width: 100%;       
   min-height: 100vh;
-  margin: 0;          
-  padding: 0 1rem 3rem 1rem;         
+  margin: 0;                 
   overflow-y: auto;
   display: flex;
   flex-direction: column;
